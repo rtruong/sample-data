@@ -1,23 +1,23 @@
 {
-  "name": "sample-data",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "",
+  "bin": "index.js",
+  "bugs": {
+    "url": "https://github.com/rtruong/sample-data/issues"
   },
+  "dependencies": {
+    "immutable": "^4.0.0",
+    "lodash": "^4.17.21"
+  },
+  "description": "",
+  "homepage": "https://github.com/rtruong/sample-data#readme",
+  "license": "ISC",
+  "name": "sample-data",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rtruong/sample-data.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rtruong/sample-data/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/rtruong/sample-data#readme",
-  "dependencies": {
-    "immutable": "^4.0.0",
-    "lodash": "^4.17.21"
-  }
+  "version": "1.0.0"
 }
