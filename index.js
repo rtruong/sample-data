@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const generateData = require("./generateData");
 
 generateData(50000);
