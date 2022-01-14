@@ -2,9 +2,9 @@ const fs = require("fs");
 const generateAmounts = require("./generateAmounts");
 const refData = require("./refData");
 
-const PATH = "./build/dist/cache/libs/sample-data";
+const PATH = "cache/libs/sample-data";
 
-module.exports = (rows) => {
+module.exports = (rows, path = "./build/dist") => {
   const {
     accounts,
     costCenters,
@@ -13,11 +13,11 @@ module.exports = (rows) => {
     locations,
     vendors,
   } = refData(Math.ceil(Math.pow(rows / 2, 1 / 5)));
-  fs.mkdirSync(PATH, {
+  fs.mkdirSync(`${path}/${PATH}`, {
     recursive: true,
   });
 
-  const out = fs.createWriteStream(`${PATH}/${rows}.json`, "utf-8");
+  const out = fs.createWriteStream(`${path}/${PATH}/${rows}.json`, "utf-8");
   let emitted = 0;
 
   out.write("[");

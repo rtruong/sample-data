@@ -6,7 +6,8 @@
   },
   "dependencies": {
     "immutable": "^4.0.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "yargs": "^17.3.1"
   },
   "description": "",
   "homepage": "https://github.com/rtruong/sample-data#readme",
